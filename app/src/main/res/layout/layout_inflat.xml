@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Barang"
+        android:id="@+id/tv_inf_nama_barang"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignBottom="@+id/btn_inf_beli"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:id="@+id/iv_inf_gambar"
+        android:src="@drawable/mobil"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp."
+        android:id="@+id/tv_inf_harga"
+        android:layout_alignBottom="@+id/iv_inf_gambar"
+        android:layout_toRightOf="@+id/iv_inf_gambar"
+        android:layout_toEndOf="@+id/iv_inf_gambar"
+        android:layout_marginBottom="31dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beli"
+        android:id="@+id/btn_inf_beli"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
